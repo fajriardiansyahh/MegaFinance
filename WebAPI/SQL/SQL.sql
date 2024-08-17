@@ -184,6 +184,14 @@ CREATE TABLE [dbo].[tr_bpkb](
 ) ON [PRIMARY]
 GO
 
+ALTER TABLE [dbo].[tr_bpkb]  WITH CHECK ADD  CONSTRAINT [FK_tr_bpkb_ms_storage_location_location_id1] FOREIGN KEY([location_id])
+REFERENCES [dbo].[ms_storage_location] ([location_id])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[tr_bpkb] CHECK CONSTRAINT [FK_tr_bpkb_ms_storage_location_location_id1]
+GO
+
 
 
 
