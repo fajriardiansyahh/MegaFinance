@@ -40,6 +40,7 @@ namespace WebAPI.Controllers
             return Ok(user);
         }
 
+        [AllowAnonymous]
         [HttpPost]
         [Route("AddUser")]
         public async Task<ActionResult<List<User>>> AddUser(User user)

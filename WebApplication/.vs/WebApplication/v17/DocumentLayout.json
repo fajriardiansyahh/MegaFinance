@@ -38,8 +38,7 @@
               "RelativeToolTip": "Models\\BaseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T19:44:52.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T19:44:52.773Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "Models\\BPKBModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T19:41:36.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T19:41:36.334Z"
             },
             {
               "$type": "Document",
@@ -62,7 +60,7 @@
               "RelativeDocumentMoniker": "Controllers\\BPKBController.cs",
               "ToolTip": "D:\\04- WORKING JOBS\\LAMARAN - INTERVIEW\\MegaFinance\\GIT\\WebApplication\\Controllers\\BPKBController.cs",
               "RelativeToolTip": "Controllers\\BPKBController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAowHYAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAcwIUAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T19:36:12.357Z",
               "EditorCaption": ""
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Views\\BPKB\\Edit.cshtml",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-24T19:33:30.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T19:33:30.157Z"
             }
           ]
         }

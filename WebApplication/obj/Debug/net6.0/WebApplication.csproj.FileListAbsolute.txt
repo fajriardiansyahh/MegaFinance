@@ -28,6 +28,9 @@ C:\Users\Fajri Ardiansyah\source\repos\WebApplication\obj\Debug\net6.0\refint\We
 C:\Users\Fajri Ardiansyah\source\repos\WebApplication\obj\Debug\net6.0\WebApplication.pdb
 C:\Users\Fajri Ardiansyah\source\repos\WebApplication\obj\Debug\net6.0\WebApplication.genruntimeconfig.cache
 C:\Users\Fajri Ardiansyah\source\repos\WebApplication\obj\Debug\net6.0\ref\WebApplication.dll
+D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\WebApplication.dll
+D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\WebApplication.pdb
+D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\appsettings.Development.json
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\appsettings.json
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\appsettings.Staging.json
@@ -35,8 +38,6 @@ D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\WebApplication.exe
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\WebApplication.deps.json
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\WebApplication.runtimeconfig.json
-D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\WebApplication.dll
-D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\WebApplication.pdb
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\Humanizer.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\MessagePack.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\MessagePack.Annotations.dll
@@ -61,7 +62,6 @@ D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\NuGet.Common.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\NuGet.Configuration.dll
 D:\04- WORKING JOBS\LAMARAN - INTERVIEW\MegaFinance\GIT\WebApplication\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
