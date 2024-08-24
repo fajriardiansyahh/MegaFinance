@@ -1,34 +1,80 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using Newtonsoft.Json;
+using System.Text;
 using WebApplication.Models;
+using WebApplication.Models.Users;
 
 namespace WebApplication.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly HttpClient _httpClient;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            this._httpClient = new HttpClient();
         }
 
         public IActionResult Index()
         {
-            var formData = new LoginViewModel();
-            return View(formData);
+            var userLogin = HttpContext.Session.GetObject<UserLoginStateModel>("user");
+
+            if (userLogin == null)
+            {
+                return View();
+            }
+
+            return RedirectToAction("Index", "BPKB");
         }
 
         [HttpPost]
-        public async Task<ActionResult<LoginViewModel>> Login(LoginViewModel loginViewModel)
+        public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
-            return View();
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    string json = JsonConvert.SerializeObject(loginViewModel);
+                    StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                    HttpResponseMessage httpResponseMessage = await _httpClient.PostAsync(new Uri("https://localhost:44308/api/v1/") + "Account/Login", content);
+
+                    if (httpResponseMessage.IsSuccessStatusCode)
+                    {
+                        var jsonResponse = await httpResponseMessage.Content.ReadAsStringAsync();
+
+                        if (jsonResponse == null)
+                        {
+                            ModelState.AddModelError("", "Username or Password wrong");
+                            return View("Home");
+                        }
+                        else
+                        {
+                            UserLoginStateModel result = JsonConvert.DeserializeObject<UserLoginStateModel>(jsonResponse);
+                            HttpContext.Session.SetObject("user", result);
+                            return RedirectToAction("Index", "BPKB");
+                        }
+                    }
+
+                    ModelState.AddModelError("", "Username or Password wrong");
+                    return RedirectToAction("Index", "Home");
+                }
+
+                return View("PageError");
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError("", "Error in cloud - GetPLUInfo" + e.Message);
+                throw;
+            }
+            
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Logout()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            HttpContext.Session.Remove("user");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

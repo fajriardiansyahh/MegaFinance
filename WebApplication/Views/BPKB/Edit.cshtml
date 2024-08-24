@@ -1,0 +1,77 @@
+﻿@model WebApplication.Models.BPKBModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>BPKBModel</h4>
+<hr />
+
+<form asp-action="PostEdit" method="post">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="agreement_number" class="control-label"></label>
+                <input asp-for="agreement_number" class="form-control" />
+                <span asp-validation-for="agreement_number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bpkb_no" class="control-label"></label>
+                <input asp-for="bpkb_no" class="form-control" />
+                <span asp-validation-for="bpkb_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="branch_id" class="control-label"></label>
+                <input asp-for="branch_id" class="form-control" />
+                <span asp-validation-for="branch_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bpkb_date" class="control-label"></label>
+                <input asp-for="bpkb_date" class="form-control" />
+                <span asp-validation-for="bpkb_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="faktur_no" class="control-label"></label>
+                <input asp-for="faktur_no" class="form-control" />
+                <span asp-validation-for="faktur_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bpkb_date_in" class="control-label"></label>
+                <input asp-for="bpkb_date_in" class="form-control" />
+                <span asp-validation-for="bpkb_date_in" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="form-group">
+                <label asp-for="faktur_date" class="control-label"></label>
+                <input asp-for="faktur_date" class="form-control" />
+                <span asp-validation-for="faktur_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="police_no" class="control-label"></label>
+                <input asp-for="police_no" class="form-control" />
+                <span asp-validation-for="police_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="location_id" class="control-label"></label>
+                <input asp-for="location_id" class="form-control" />
+                <span asp-validation-for="location_id" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Update" class="btn btn-warning" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

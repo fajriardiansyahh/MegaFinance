@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fajri Ardiansyah\\source\\repos\\WebAPI\\WebAPI.csproj": {}
+    "D:\\04- WORKING JOBS\\LAMARAN - INTERVIEW\\MegaFinance\\GIT\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fajri Ardiansyah\\source\\repos\\WebAPI\\WebAPI.csproj": {
+    "D:\\04- WORKING JOBS\\LAMARAN - INTERVIEW\\MegaFinance\\GIT\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fajri Ardiansyah\\source\\repos\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "D:\\04- WORKING JOBS\\LAMARAN - INTERVIEW\\MegaFinance\\GIT\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\Fajri Ardiansyah\\source\\repos\\WebAPI\\WebAPI.csproj",
+        "projectPath": "D:\\04- WORKING JOBS\\LAMARAN - INTERVIEW\\MegaFinance\\GIT\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\Fajri Ardiansyah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fajri Ardiansyah\\source\\repos\\WebAPI\\obj\\",
+        "outputPath": "D:\\04- WORKING JOBS\\LAMARAN - INTERVIEW\\MegaFinance\\GIT\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -51,11 +51,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.33, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.33, )"
             },

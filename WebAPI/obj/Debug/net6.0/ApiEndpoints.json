@@ -1,8 +1,24 @@
 [
   {
+    "ContainingType": "WebAPI.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Account/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogin",
+        "Type": "WebAPI.Entities.Users.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPI.Controllers.BPKBController",
     "Method": "AddBPKB",
-    "RelativePath": "api/BPKB/v1/AddBPKB",
+    "RelativePath": "api/v1/BPKB/AddBPKB",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +44,7 @@
   {
     "ContainingType": "WebAPI.Controllers.BPKBController",
     "Method": "DeleteByID",
-    "RelativePath": "api/BPKB/v1/DeleteByID",
+    "RelativePath": "api/v1/BPKB/DeleteByID",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -54,7 +70,7 @@
   {
     "ContainingType": "WebAPI.Controllers.BPKBController",
     "Method": "GetAll",
-    "RelativePath": "api/BPKB/v1/GetAll",
+    "RelativePath": "api/v1/BPKB/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -64,7 +80,7 @@
   {
     "ContainingType": "WebAPI.Controllers.BPKBController",
     "Method": "GetByID",
-    "RelativePath": "api/BPKB/v1/GetByID",
+    "RelativePath": "api/v1/BPKB/GetByID",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -80,7 +96,7 @@
   {
     "ContainingType": "WebAPI.Controllers.BPKBController",
     "Method": "UpdateBPKB",
-    "RelativePath": "api/BPKB/v1/UpdateBPKB",
+    "RelativePath": "api/v1/BPKB/UpdateBPKB",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -96,7 +112,7 @@
   {
     "ContainingType": "WebAPI.Controllers.StorageLocationController",
     "Method": "AddStorageLocation",
-    "RelativePath": "api/StorageLocation/v1/AddStorageLocation",
+    "RelativePath": "api/v1/StorageLocation/AddStorageLocation",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -122,7 +138,7 @@
   {
     "ContainingType": "WebAPI.Controllers.StorageLocationController",
     "Method": "DeleteByID",
-    "RelativePath": "api/StorageLocation/v1/DeleteByID",
+    "RelativePath": "api/v1/StorageLocation/DeleteByID",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -148,7 +164,7 @@
   {
     "ContainingType": "WebAPI.Controllers.StorageLocationController",
     "Method": "GetAll",
-    "RelativePath": "api/StorageLocation/v1/GetAll",
+    "RelativePath": "api/v1/StorageLocation/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -158,7 +174,7 @@
   {
     "ContainingType": "WebAPI.Controllers.StorageLocationController",
     "Method": "GetByID",
-    "RelativePath": "api/StorageLocation/v1/GetByID",
+    "RelativePath": "api/v1/StorageLocation/GetByID",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -174,7 +190,7 @@
   {
     "ContainingType": "WebAPI.Controllers.StorageLocationController",
     "Method": "UpdateStorageLocation",
-    "RelativePath": "api/StorageLocation/v1/UpdateStorageLocation",
+    "RelativePath": "api/v1/StorageLocation/UpdateStorageLocation",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -190,20 +206,20 @@
   {
     "ContainingType": "WebAPI.Controllers.UserController",
     "Method": "AddUser",
-    "RelativePath": "api/User/v1/AddUser",
+    "RelativePath": "api/v1/User/AddUser",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "user",
-        "Type": "WebAPI.Entities.User",
+        "Type": "WebAPI.Entities.Users.User",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[WebAPI.Entities.User, WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[WebAPI.Entities.Users.User, WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -216,7 +232,7 @@
   {
     "ContainingType": "WebAPI.Controllers.UserController",
     "Method": "DeleteByID",
-    "RelativePath": "api/User/v1/DeleteByID",
+    "RelativePath": "api/v1/User/DeleteByID",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -229,7 +245,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[WebAPI.Entities.User, WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[WebAPI.Entities.Users.User, WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -242,7 +258,7 @@
   {
     "ContainingType": "WebAPI.Controllers.UserController",
     "Method": "GetAll",
-    "RelativePath": "api/User/v1/GetAll",
+    "RelativePath": "api/v1/User/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -252,7 +268,7 @@
   {
     "ContainingType": "WebAPI.Controllers.UserController",
     "Method": "GetByID",
-    "RelativePath": "api/User/v1/GetByID",
+    "RelativePath": "api/v1/User/GetByID",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -268,14 +284,14 @@
   {
     "ContainingType": "WebAPI.Controllers.UserController",
     "Method": "UpdateUser",
-    "RelativePath": "api/User/v1/UpdateUser",
+    "RelativePath": "api/v1/User/UpdateUser",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "user",
-        "Type": "WebAPI.Entities.User",
+        "Type": "WebAPI.Entities.Users.User",
         "IsRequired": true
       }
     ],

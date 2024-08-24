@@ -1,15 +1,17 @@
-﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using WebAPI.DataContext;
-using WebAPI.Entities;
+using WebAPI.Entities.Users;
 using WebAPI.Helpers;
 
 namespace WebAPI.Controllers
 {
+    //[Authorize]
     [ApiController]
-    [Route("api/[controller]/v1/")]
+    [Route("api/v1/[controller]/")]
     public class UserController : Controller
     {
         private readonly DatabaseContext _DatabaseContext;
@@ -20,7 +22,6 @@ namespace WebAPI.Controllers
 
         [HttpGet]
         [Route("GetAll")]
-        //[Authorize]
         public async Task<IActionResult> GetAll()
         {
             var user = await _DatabaseContext.Users.ToListAsync();
@@ -34,7 +35,7 @@ namespace WebAPI.Controllers
         {
             var user = await _DatabaseContext.Users.FindAsync(user_id);
             if (user is null)
-                return NotFound("Storage Location Not Found");
+                return NotFound("Users Not Found");
 
             return Ok(user);
         }
@@ -56,7 +57,7 @@ namespace WebAPI.Controllers
         {
             var _user = await _DatabaseContext.Users.FindAsync(user.user_id);
             if (_user is null)
-                return NotFound("Storage Location Not Found");
+                return NotFound("Users Not Found");
 
             _user.user_name = user.user_name;
             _user.is_active = user.is_active;
@@ -72,7 +73,7 @@ namespace WebAPI.Controllers
         {
             var user = await _DatabaseContext.Users.FindAsync(user_id);
             if (user is null)
-                return NotFound("Storage Location Not Found");
+                return NotFound("Users Not Found");
 
             _DatabaseContext.Remove(user);
             await _DatabaseContext.SaveChangesAsync();

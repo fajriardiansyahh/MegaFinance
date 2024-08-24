@@ -117,7 +117,7 @@ namespace WebAPI.Migrations
                 {
                     b.HasOne("WebAPI.Entities.StorageLocation", "location_id")
                         .WithMany()
-                        .HasForeignKey("location_id1")
+                        .HasForeignKey("location_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

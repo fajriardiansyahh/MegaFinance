@@ -73,10 +73,10 @@ namespace WebAPI.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_tr_bpkb_location_id1",
+                name: "IX_tr_bpkb_location_id",
                 schema: "dbo",
                 table: "tr_bpkb",
-                column: "location_id1");
+                column: "location_id");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

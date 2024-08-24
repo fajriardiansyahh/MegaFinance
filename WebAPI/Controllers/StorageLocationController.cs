@@ -6,8 +6,9 @@ using WebAPI.Entities;
 
 namespace WebAPI.Controllers
 {
+    [Authorize]
     [ApiController]
-    [Route("api/[controller]/v1/")]
+    [Route("api/v1/[controller]/")]
     public class StorageLocationController : Controller
     {
         private readonly DatabaseContext _DatabaseContext;
