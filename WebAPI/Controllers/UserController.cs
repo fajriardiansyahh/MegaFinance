@@ -9,7 +9,7 @@ using WebAPI.Helpers;
 
 namespace WebAPI.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [ApiController]
     [Route("api/v1/[controller]/")]
     public class UserController : Controller
